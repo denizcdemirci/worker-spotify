@@ -10,7 +10,7 @@ Here is an example of a response to script:
 
 ```json
 {
-  "isPlaying": true, // true if a song is currently playing
+  "isPlaying": true,
   "name": "The Less I Know The Better",
   "artist": "Tame Impala",
   "album": "Currents",
