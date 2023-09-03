@@ -6,7 +6,7 @@ This template is a simple [Spotify Web API](https://developer.spotify.com/docume
 
 [`src/index.ts`](https://github.com/denizcdemirci/worker-spotify/blob/main/src/index.ts) is the content of the Workers script.
 
-Here is an example of a response to script:
+Here is an example of the response to the script:
 
 ```json
 {
@@ -31,11 +31,11 @@ $ yarn wrangler generate worker-spotify https://github.com/denizcdemirci/worker-
 $ pnpm wrangler generate worker-spotify https://github.com/denizcdemirci/worker-spotify
 ```
 
-This template requires a Spotify app. Instructions for creating a Spotify app can be found [in this documentation](https://developer.spotify.com/documentation/web-api/tutorials/getting-started).
+This template requires a Spotify app. Instructions for setting up a Spotify app can be found [in this documentation](https://developer.spotify.com/documentation/web-api/tutorials/getting-started).
 
-Before publishing your code, you need to edit the `wrangler.toml` file. Add your Spotify app's `CLIENT_ID`, `CLIENT_SECRET` and `REFRESH_TOKEN` to this file. More information about configuring and publishing your code can be found [in the documentation](https://developers.cloudflare.com/workers/get-started/guide/).
+Before publishing your script, you need to edit the `wrangler.toml` file. Add your Spotify app's `CLIENT_ID`, `CLIENT_SECRET` and `REFRESH_TOKEN` to this file. More information about configuring and publishing your script can be found [in the documentation](https://developers.cloudflare.com/workers/get-started/guide/).
 
-Once you are ready, you can publish your code by running the following command:
+Once you are ready, you can publish your script by running the following command:
 
 ```sh
 $ npm run deploy
@@ -49,4 +49,4 @@ $ pnpm run deploy
 
 Your Spotify app must have the [`user-read-currently-playing`](https://developer.spotify.com/documentation/web-api/concepts/scopes#user-read-currently-playing) and [`user-read-recently-played`](https://developer.spotify.com/documentation/web-api/concepts/scopes#user-read-recently-played) scopes.
 
-Note that Spotify imposes [rate limits](https://developer.spotify.com/documentation/web-api/concepts/rate-limits) on API calls. If there will be an application that will receive a lot of requests, you need to add [cache](https://developers.cloudflare.com/workers/runtime-apis/cache) for this template.
+Note that Spotify imposes [rate limits](https://developer.spotify.com/documentation/web-api/concepts/rate-limits) on API calls. If there is an application that will receive a lot of requests, you need to add [cache](https://developers.cloudflare.com/workers/runtime-apis/cache) for this template.
